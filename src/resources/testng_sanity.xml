@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NA Crm Test Automation Test Suite">
+    <test verbose="2" preserve-order="true" name="NA Crm Test Cases">
+        <classes>
+            <class name="com.crm.qa.testCases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="crmLogoImageTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+
+            <class name="com.crm.qa.testCases.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitleTest"/>
+                    <include name="verifyUserNameTest"/>
+                    <include name="verifyContactsLinkTest"/>
+                </methods>
+            </class>
+
+<!--            <class name="com.crm.qa.testCases.ContactPageTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="verifyContactsPageLabelTest"/>-->
+            <!--                    <include name="selectSingleContactsTest"/>-->
+            <!--                    <include name="selectMultipleContactsTest"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
+        </classes>
+    </test>
+</suite>
